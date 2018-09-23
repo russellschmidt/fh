@@ -3,9 +3,10 @@
 	background: linear-gradient(0deg, rgba(0,101,114,1) 0%, rgba(21,230,182,1) 100%);
 	color: #ffffff;
 	min-height: 100vh;
+	min-width: 100vw;
 	margin: 0;
 	padding: 0;
-	width: 100vw;
+
 }
 
 .btn {
@@ -13,24 +14,24 @@
 	border: none;
 	border-radius: 30px;
 	color: #ffffff;
-	font-size: 20px;
+	font-size: 18px;
 	font-weight: 700;
-	height: 62px;
+	height: 59px;
 	text-transform: uppercase;
 	width: 192px;
 
 }
 
 .btn_container {
-	margin-top: 3rem;
+	margin-top: 22px;
 	text-align: center;
 }
 
 .emailInput {
 	border-radius: 37px;
 	color: #15e6b6;
-	font-size: 35px;
-	height: 75px;
+	font-size: 22px;
+	height: 62px;
 	margin: 0 auto;
 	padding-left: 2rem;
 	width: 630px;
@@ -38,25 +39,21 @@
 
 .emailInput::-webkit-input-placeholder { /* Chrome/Opera/Safari */
 	color: #15e6b6;
-	font-size: 1.6rem;
 }
 .emailInput::-moz-placeholder { /* Firefox 19+ */
 	color: #15e6b6;
-	font-size: 1.6rem;
 	opacity: 1;
 }
 .emailInput:-ms-input-placeholder { /* IE 10+ */
 	color: #15e6b6;
-	font-size: 1.6rem;
 }
 .emailInput:-moz-placeholder { /* Firefox 18- */
 	color: #15e6b6;
-	font-size: 1.6rem;
 	opacity: 1;
 }
 
 .emailInput_container {
-	margin-top: 2rem;
+	margin-top: 22px;
 	text-align: center;
 }
 
@@ -65,21 +62,21 @@
 }
 
 .h1 {
-	font-size: 40px;
+	font-size: 32px;
 	font-weight: 700;
-	margin-top: 10vh;
+	margin-top: 60px;
 	margin-bottom: 0;
 }
 
 .h2 {
-	font-size: 35px;
+	font-size: 26px;
 	font-weight: 400;
-	margin-top: 1rem;
+	margin-top: 10px;
 }
 
 .logo {
 	margin: 0 auto;
-	padding-top: 100px;
+	padding-top: 60px;
 	width: 100vw;
 }
 
@@ -87,19 +84,24 @@
 	width: 75px;
 }
 
-.socialIcon, .socialIcon_hover:hover  {
+.socialIcon, .socialIcon_hover  {
 	display: inline-block;
 }
 
-.socialIcon:hover, .socialIcon_hover {
-
-}
-
 .socialIcon_container {
+	position: absolute;
+	bottom: 60px;
 	display: flex;
 	justify-content: center;
-	margin-top: 200px;
+	width: 100vw;
 }
+
+/*
+ *
+ *
+ *
+ * ***** RESPONSIVE ***** *
+*/
 
 @media only screen and (max-width: 600px) {
 	html, body {
