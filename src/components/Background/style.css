@@ -2,7 +2,7 @@
 	background: rgb(0,101,114);
 	background: linear-gradient(0deg, rgba(0,101,114,1) 0%, rgba(21,230,182,1) 100%);
 	color: #ffffff;
-	height: 100vh;
+	min-height: 100vh;
 	margin: 0;
 	padding: 0;
 	width: 100vw;
