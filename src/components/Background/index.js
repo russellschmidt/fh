@@ -22,15 +22,24 @@ const Background = () => (
 		</div>
 		<div class={style.socialIcon_container}>
 			<a href="https://www.fb.me/FarmHausApp" target="_blank" rel="noopener noreferrer" >
-				<img class={style.socialIcon} src="https://s3.amazonaws.com/farmhausapp/img/farmhaus-facebook%402x.png" alt="facebook icon" />
+				<img class={style.socialIcon} 		 src="https://s3.amazonaws.com/farmhausapp/img/farmhaus-facebook%402x.png" alt="facebook icon" 
+					onMouseOver={e => (e.currentTarget.src = "https://s3.amazonaws.com/farmhausapp/img/farmhaus-facebook-hover%402x.png")}
+					onMouseOut={e => (e.currentTarget.src = "https://s3.amazonaws.com/farmhausapp/img/farmhaus-facebook%402x.png")} />
 			</a>
 			<a href="https://www.instagram.com/farmhausapp" target="_blank" rel="noopener noreferrer" >
-				<img class={style.socialIcon} src="https://s3.amazonaws.com/farmhausapp/img/farmhaus-instagram%402x.png" alt="instagram icon" />
+				<img class={style.socialIcon} src="https://s3.amazonaws.com/farmhausapp/img/farmhaus-instagram%402x.png" alt="instagram icon" 
+				onMouseOver={e => (e.currentTarget.src = "https://s3.amazonaws.com/farmhausapp/img/farmhaus-instagram-hover%402x.png")}
+				onMouseOut={e => (e.currentTarget.src = "https://s3.amazonaws.com/farmhausapp/img/farmhaus-instagram%402x.png")} />
 			</a>
 			<a href="https://www.twitter.com/farmhausapp" target="_blank" rel="noopener noreferrer" >
-				<img class={style.socialIcon} src="https://s3.amazonaws.com/farmhausapp/img/farmhaus-twitter%402x.png" alt="twitter icon" />
+				<img class={style.socialIcon} src="https://s3.amazonaws.com/farmhausapp/img/farmhaus-twitter%402x.png" alt="twitter icon" 
+				onMouseOver={e => (e.currentTarget.src = "https://s3.amazonaws.com/farmhausapp/img/farmhaus-twitter-hover%402x.png")}
+				onMouseOut={e => (e.currentTarget.src = "https://s3.amazonaws.com/farmhausapp/img/farmhaus-twitter%402x.png")} />
 			</a>
+
 		</div>
+
+
 	</div>
 );
 

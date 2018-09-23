@@ -83,8 +83,16 @@
 	width: 100vw;
 }
 
-.socialIcon {
+.socialIcon, .socialIcon_hover {
 	width: 75px;
+}
+
+.socialIcon, .socialIcon_hover:hover  {
+	display: inline-block;
+}
+
+.socialIcon:hover, .socialIcon_hover {
+	
 }
 
 .socialIcon_container {
