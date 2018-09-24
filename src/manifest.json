@@ -1,19 +1,19 @@
 {
-  "name": "fh",
-  "short_name": "fh",
+  "name": "FarmHaus App",
+  "short_name": "FarmHaus",
   "start_url": "/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#fff",
-  "theme_color": "#673ab8",
+  "theme_color": "#15e6b6",
   "icons": [
     {
-      "src": "/assets/icons/android-chrome-192x192.png",
+      "src": "https://s3.amazonaws.com/farmhausapp/img/farmhaus-app-logo-192x192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/assets/icons/android-chrome-512x512.png",
+      "src": "https://s3.amazonaws.com/farmhausapp/img/farmhaus-app-logo-512x512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
