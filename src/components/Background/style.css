@@ -12,12 +12,14 @@
 .btn {
 	background-color: #15E6B6;
 	border: none;
-	border-radius: 2.7778vh; /* calc(30/1080) */
+	/* border-radius: 2.7778vh; calc(30/1080) */
+	border-radius: 1.7rem;
 	color: #ffffff;
 	font-size: 1.25rem;
 	font-weight: 700;
-	height: 5.463vh; /* calc(59px/1080px); */
+	/* height: 5.463vh; calc(59px/1080px); */
 	min-width: 192px;
+	padding: 1rem 0;
 	text-transform: uppercase;
 	width: 10vw; /* calc(192px/1920px); */
 
