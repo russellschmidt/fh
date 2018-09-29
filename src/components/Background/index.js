@@ -12,7 +12,7 @@ const Background = () => (
 			<h1 class={style.h1}>Something cool is coming to your kitchen.</h1>
 		</div>
 		<div>
-			<h2 class={style.h2}>Enter your email to stay up to be part of the first crop when we launch.</h2>
+			<h2 class={style.h2}>Enter your email to be part of the first crop when we launch.</h2>
 		</div>
 		<div class={style.emailInput_container}>
 			<input type="email" placeholder="Enter your email" id="email-input" class={style.emailInput} name="email-input" />
