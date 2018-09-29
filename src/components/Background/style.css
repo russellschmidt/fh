@@ -76,7 +76,7 @@
 
 .logo {
 	margin: 0 auto;
-	padding-top: 60px;
+	padding-top: 100px;
 	width: 100vw;
 }
 
@@ -169,6 +169,10 @@
 		width: 96px;
 	}
 
+	.btn_container {
+		margin-top: 17px;
+	}
+
 	.emailInput {
 		font-size: 9px;
 		height: 32px;
@@ -176,12 +180,12 @@
 	}
 
 	.emailInput_container {
-		margin-top: 24px;
+		margin-top: 12px;
 	}
 
 	.h1 {
 		font-size: 22px;
-		margin: 10px auto 0;
+		margin: 45px auto 0;
 		width: 495px;
 	}
 
@@ -192,16 +196,16 @@
 	}
 
 	.logo {
-		padding-top: 46px;
+		padding-top: 35px;
 	}
 
 	.socialIcon {
 		display: inline-block;
 		margin: 0 1rem;
-		width: 28px;
+		width: 32px;
 	}
 	
 	.socialIcon_container {
-		bottom: 49px;
+		bottom: 14px;
 	}
 }
