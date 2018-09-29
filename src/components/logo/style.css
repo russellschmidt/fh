@@ -12,3 +12,7 @@
 @media only screen and (max-width: 600px) and (orientation: portrait) {
   width: 52px;
 }
+
+@media only screen and (max-width: 900px) and (orientation: landscape) {
+  width: 65px;
+}
