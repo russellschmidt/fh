@@ -90,8 +90,11 @@
 }
 
 .socialIcon, .socialIcon_hover {
-	height: 6.8518vh; /* calc(74px/1080px); */
-	width:  6.8518vh;
+	/* height: 6.8518vh; /* calc(74px/1080px); */
+	/* width:  6.8518vh; */
+	height: 3.8rem;
+	margin: 0 0.3rem;
+	width: 3.8rem;
 }
 
 .socialIcon, .socialIcon_hover  {
