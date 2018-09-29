@@ -15,7 +15,7 @@ const Background = () => (
 			<h2 class={style.h2}>Enter your email to be part of the first crop when we launch.</h2>
 		</div>
 		<div class={style.emailInput_container}>
-			<input type="email" placeholder="Enter your email" id="email-input" class={style.emailInput} name="email-input" />
+			<input type="email" placeholder="Email address" id="email-input" class={style.emailInput} name="email-input" />
 		</div>
 		<div class={style.btn_container}>
 			<button class={style.btn}>Join</button>

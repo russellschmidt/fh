@@ -12,29 +12,34 @@
 .btn {
 	background-color: #15E6B6;
 	border: none;
-	border-radius: 30px;
+	border-radius: 2.7778vh; /* calc(30/1080) */
 	color: #ffffff;
-	font-size: 18px;
+	font-size: 1.25rem;
 	font-weight: 700;
-	height: 59px;
+	height: 5.463vh; /* calc(59px/1080px); */
+	min-width: 192px;
 	text-transform: uppercase;
-	width: 192px;
+	width: 10vw; /* calc(192px/1920px); */
 
 }
 
 .btn_container {
-	margin-top: 22px;
+	margin-top: 5.3704vh; /* calc(58/1080); */
 	text-align: center;
 }
 
 .emailInput {
-	border-radius: 37px;
+	border: none;
+	border-radius: 3.4259vh; /* calc(37/1080); */
 	color: #15e6b6;
-	font-size: 22px;
-	height: 62px;
-	margin: 0 auto;
-	padding-left: 2rem;
-	width: 630px;
+	font-size: .9375rem;
+	min-height: 4.0741vh; /* calc(44/1080); */
+	margin: 1.2962vh auto; /* calc(12/1080) */
+	padding: 0.7rem 0 0.7rem 2rem;
+	text-transform: uppercase;
+	width: 32.8125vw; /* 630px/1920px; */
+	width: 66vw;
+	max-width: 600px;
 }
 
 .emailInput::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -53,7 +58,8 @@
 }
 
 .emailInput_container {
-	margin-top: 22px;
+	margin-top: 1.2963vh; /* calc(14/1080); */
+	margin-top: 2.5vh;
 	text-align: center;
 }
 
@@ -62,26 +68,28 @@
 }
 
 .h1 {
-	font-size: 32px;
+	font-size: 2.5rem;
 	font-weight: 700;
-	margin-top: 60px;
+	margin-top: 17.4074vh; /* calc(188px/1080px); */
 	margin-bottom: 0;
 }
 
 .h2 {
-	font-size: 26px;
+	font-size: 1.5625rem;
 	font-weight: 400;
-	margin-top: 10px;
+	margin-top: 1.0185vh; /* calc(11px/1080px); */
+	margin-top: 0.5vh;
 }
 
 .logo {
 	margin: 0 auto;
-	padding-top: 100px;
+	padding-top: 9.2592vh; /* calc(100px/1080px); */
 	width: 100vw;
 }
 
 .socialIcon, .socialIcon_hover {
-	width: 75px;
+	height: 6.8518vh; /* calc(74px/1080px); */
+	width:  6.8518vh;
 }
 
 .socialIcon, .socialIcon_hover  {
@@ -90,7 +98,7 @@
 
 .socialIcon_container {
 	position: absolute;
-	bottom: 60px;
+	bottom: 8.7963vh; /* calc(95px/1080px); */
 	display: flex;
 	justify-content: center;
 	width: 100vw;
@@ -142,6 +150,7 @@
 
 	.socialIcon {
 		display: inline-block;
+		height: 28px;
 		margin: 0 1rem;
 		width: 28px;
 	}
@@ -164,6 +173,7 @@
 	}
 
 	.btn {
+		border-radius: 15px;
 		font-size: 11px;
 		height: 30px;
 		width: 96px;
@@ -174,6 +184,7 @@
 	}
 
 	.emailInput {
+		border-radius: 16px;
 		font-size: 9px;
 		height: 32px;
 		width: 395px;
@@ -201,6 +212,7 @@
 
 	.socialIcon {
 		display: inline-block;
+		height: 32px;
 		margin: 0 1rem;
 		width: 32px;
 	}
