@@ -100,44 +100,108 @@
  *
  *
  *
- * ***** RESPONSIVE ***** *
+ * ***** RESPONSIVE --- PORTRAIT ***** *
 */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) and (orientation: portrait) {
 	html, body {
-		font-size: 12px; 
+		font-size: 10px; 
 	}
 
 	.btn {
-		height: 40px;
-		width: 50vw;
+		font-size: 11px;
+		height: 30px;
+		width: 96px;
 	}
 
 	.emailInput {
-		font-size: 1.5rem;
-		height: 54px;
-		width: 90vw;
+		font-size: 9px;
+		height: 32px;
+		width: 295px;
+	}
+
+	.emailInput_container {
+		margin-top: 24px;
 	}
 
 	.h1 {
 		font-size: 22px;
+		margin: 126px auto 0;
+		width: 295px;
 	}
 
 	.h2 {
 		font-size: 15px;
+		margin: 10px auto 0;
+		width: 295px;
 	}
 
 	.logo {
-		padding-top: 40px;
+		padding-top: 46px;
 	}
 
 	.socialIcon {
 		display: inline-block;
 		margin: 0 1rem;
-		width: 60px;
+		width: 28px;
 	}
 	
 	.socialIcon_container {
-		margin-top: 12rem;
+		bottom: 49px;
+	}
+}
+
+/*
+ *
+ *
+ *
+ * ***** RESPONSIVE --- LANDSCAPE ***** *
+*/
+
+@media only screen and (max-width: 913px) and (orientation: landscape) {
+	html, body {
+		font-size: 10px; 
+	}
+
+	.btn {
+		font-size: 11px;
+		height: 30px;
+		width: 96px;
+	}
+
+	.emailInput {
+		font-size: 9px;
+		height: 32px;
+		width: 395px;
+	}
+
+	.emailInput_container {
+		margin-top: 24px;
+	}
+
+	.h1 {
+		font-size: 22px;
+		margin: 10px auto 0;
+		width: 495px;
+	}
+
+	.h2 {
+		font-size: 15px;
+		margin: 10px auto 0;
+		width: 495px;
+	}
+
+	.logo {
+		padding-top: 46px;
+	}
+
+	.socialIcon {
+		display: inline-block;
+		margin: 0 1rem;
+		width: 28px;
+	}
+	
+	.socialIcon_container {
+		bottom: 49px;
 	}
 }

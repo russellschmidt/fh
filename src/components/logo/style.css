@@ -1,18 +1,29 @@
+/*
+ *
+ * ***** DESKTOP ***** *
+*/
+
 .logo {
   width: 75px;
 }
 
+
 /*
- *
- *
  *
  * ***** RESPONSIVE ***** *
 */
 
 @media only screen and (max-width: 600px) and (orientation: portrait) {
-  width: 52px;
+  .logo {
+    width: 52px;
+  }
 }
 
-@media only screen and (max-width: 900px) and (orientation: landscape) {
-  width: 65px;
+@media only screen and (max-width: 813px) and (orientation: landscape) {
+  .logo {
+    width: 57px;
+  }
 }
+
+
+
