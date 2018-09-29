@@ -1,3 +1,14 @@
 .logo {
   width: 75px;
 }
+
+/*
+ *
+ *
+ *
+ * ***** RESPONSIVE ***** *
+*/
+
+@media only screen and (max-width: 600px) and (orientation: portrait) {
+  width: 52px;
+}
