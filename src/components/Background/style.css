@@ -35,11 +35,11 @@
 	font-size: .9375rem;
 	min-height: 4.0741vh; /* calc(44/1080); */
 	margin: 1.2962vh auto; /* calc(12/1080) */
+	max-width: 600px;
 	padding: 0.7rem 0 0.7rem 2rem;
 	text-transform: uppercase;
-	width: 32.8125vw; /* 630px/1920px; */
+	/* width: 32.8125vw; 630px/1920px; */
 	width: 66vw;
-	max-width: 600px;
 }
 
 .emailInput::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -58,7 +58,7 @@
 }
 
 .emailInput_container {
-	margin-top: 1.2963vh; /* calc(14/1080); */
+	/* margin-top: 1.2963vh; calc(14/1080); */
 	margin-top: 2.5vh;
 	text-align: center;
 }
@@ -77,7 +77,7 @@
 .h2 {
 	font-size: 1.5625rem;
 	font-weight: 400;
-	margin-top: 1.0185vh; /* calc(11px/1080px); */
+	/* margin-top: 1.0185vh; calc(11px/1080px); */
 	margin-top: 0.5vh;
 }
 
