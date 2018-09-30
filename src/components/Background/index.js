@@ -13,14 +13,16 @@ export default class Background extends Component {
 
 	handleSubmit(e) {
 		e.preventDefault();
-		const itemsRef = firebase.database().ref('betalist');
-		const email = {
-			email: this.state.email
+		if (this.state.email !== '') {
+			const itemsRef = firebase.database().ref('betalist');
+			const email = {
+				email: this.state.email
+			};
+			itemsRef.push(email);
+			this.setState({
+				email: ''
+			});
 		}
-		itemsRef.push(email);
-		this.setState({
-			email: ''
-		});
 	}
 
 	constructor() {
