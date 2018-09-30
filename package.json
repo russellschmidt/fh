@@ -31,7 +31,8 @@
     "firebase": "^5.5.1",
     "preact": "^8.2.6",
     "preact-compat": "^3.17.0",
-    "preact-router": "^2.5.7"
+    "preact-router": "^2.5.7",
+    "react-toastify": "^4.3.2"
   },
   "jest": {
     "verbose": true,

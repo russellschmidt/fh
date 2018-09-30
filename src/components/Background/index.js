@@ -1,4 +1,7 @@
 import { h, Component } from 'preact';
+import { ToastContainer, toast } from 'react-toastify';
+
+import 'react-toastify/dist/ReactToastify.min.css';
 import style from './style';
 import firebase from '../Firebase';
 
@@ -19,11 +22,17 @@ export default class Background extends Component {
 				email: this.state.email
 			};
 			itemsRef.push(email);
+			this.notify();
 			this.setState({
 				email: ''
 			});
 		}
 	}
+
+	notify = (email) => toast.success(`Thanks for signing up, ${this.state.email}!`,{
+		position: toast.POSITION.TOP_CENTER
+		}
+	);
 
 	constructor() {
 		super();
@@ -32,6 +41,7 @@ export default class Background extends Component {
 		}
 		this.handleChange = this.handleChange.bind(this);
 		this.handleSubmit = this.handleSubmit.bind(this);
+		this.notify = this.notify.bind(this);
 	}
 
 	render() {
@@ -77,10 +87,8 @@ export default class Background extends Component {
 							onMouseOver={e => (e.currentTarget.src = "https://s3.amazonaws.com/farmhausapp/img/farmhaus-twitter-hover%402x.png")}
 							onMouseOut={e => (e.currentTarget.src = "https://s3.amazonaws.com/farmhausapp/img/farmhaus-twitter%402x.png")} />
 					</a>
-		
 				</div>
-		
-		
+				<ToastContainer />
 			</div>
 		);
 	}
