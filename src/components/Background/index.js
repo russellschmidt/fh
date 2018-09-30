@@ -30,7 +30,8 @@ export default class Background extends Component {
 	}
 
 	notify = (email) => toast.success(`Thanks for signing up, ${this.state.email}!`,{
-		position: toast.POSITION.TOP_CENTER
+		position: toast.POSITION.TOP_CENTER,
+		className: 'success-toast'
 		}
 	);
 
