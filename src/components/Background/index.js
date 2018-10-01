@@ -14,6 +14,30 @@ export default class Background extends Component {
 		});
 	}
 
+	handleSocialFacebookIn(e) {
+		e.currentTarget.src = 'https://s3.amazonaws.com/farmhausapp/img/farmhaus-facebook-hover%402x.png';
+	}
+
+	handleSocialFacebookOut(e) {
+		e.currentTarget.src = 'https://s3.amazonaws.com/farmhausapp/img/farmhaus-facebook%402x.png';
+	}
+
+	handleSocialInstagramIn(e) {
+		e.currentTarget.src = 'https://s3.amazonaws.com/farmhausapp/img/farmhaus-instagram-hover%402x.png';
+	}
+
+	handleSocialInstagramOut(e) {
+		e.currentTarget.src = 'https://s3.amazonaws.com/farmhausapp/img/farmhaus-instagram%402x.png';
+	}
+
+	handleSocialTwitterIn(e) {
+		e.currentTarget.src = 'https://s3.amazonaws.com/farmhausapp/img/farmhaus-twitter-hover%402x.png';
+	}
+
+	handleSocialTwitterOut(e) {
+		e.currentTarget.src = 'https://s3.amazonaws.com/farmhausapp/img/farmhaus-twitter%402x.png';
+	}
+
 	handleSubmit(e) {
 		e.preventDefault();
 		if (this.state.email !== '') {
@@ -38,18 +62,24 @@ export default class Background extends Component {
 		super();
 		this.state = {
 			email: ''
-		}
+		};
 		this.handleChange = this.handleChange.bind(this);
 		this.handleSubmit = this.handleSubmit.bind(this);
+		this.handleSocialFacebookIn = this.handleSocialFacebookIn.bind(this);
+		this.handleSocialFacebookOut = this.handleSocialFacebookOut.bind(this);
+		this.handleSocialInstagramIn = this.handleSocialInstagramIn.bind(this);
+		this.handleSocialInstagramOut = this.handleSocialInstagramOut.bind(this);
+		this.handleSocialTwitterkIn = this.handleSocialTwitterIn.bind(this);
+		this.handleSocialTwitterOut = this.handleSocialTwitterOut.bind(this);
 		this.notify = this.notify.bind(this);
 	}
 
 	render() {
-		return ( 
+		return (
 			<div class={style.bg}>
 				<div class={style.logo} >
 					<Logo />
-				</div> 
+				</div>
 
 				<div>
 					<h1 class={style.h1}>Something cool is coming to your kitchen.</h1>
@@ -67,31 +97,35 @@ export default class Background extends Component {
 							class={style.emailInput}
 							name="email-input"
 							onChange={this.handleChange}
-							value={this.state.email} />
+							value={this.state.email}
+						/>
 					</div>
 					<div class={style.btn_container}>
 						<button class={style.btn}>Join</button>
-					</div>		
+					</div>
 				</form>
 		
 				<div class={style.socialIcon_container}>
 					<a href="https://www.fb.me/FarmHausApp" target="_blank" rel="noopener noreferrer" >
-						<img 
-							class={style.socialIcon} 		 src="https://s3.amazonaws.com/farmhausapp/img/farmhaus-facebook%402x.png" alt="facebook icon" 
-							onMouseOver={e => (e.currentTarget.src = "https://s3.amazonaws.com/farmhausapp/img/farmhaus-facebook-hover%402x.png")}
-							onMouseOut={e => (e.currentTarget.src = "https://s3.amazonaws.com/farmhausapp/img/farmhaus-facebook%402x.png")} />
+						<img
+							class={style.socialIcon} 		 src="https://s3.amazonaws.com/farmhausapp/img/farmhaus-facebook%402x.png" alt="facebook icon"
+							onMouseOver={this.handleSocialFacebookIn}
+							onMouseOut={this.handleSocialFacebookOut}
+						/>
 					</a>
 					<a href="https://www.instagram.com/farmhausapp" target="_blank" rel="noopener noreferrer" >
-						<img 
-							class={style.socialIcon} 		 src="https://s3.amazonaws.com/farmhausapp/img/farmhaus-instagram%402x.png" alt="instagram icon" 
-							onMouseOver={e => (e.currentTarget.src = "https://s3.amazonaws.com/farmhausapp/img/farmhaus-instagram-hover%402x.png")}
-							onMouseOut={e => (e.currentTarget.src = "https://s3.amazonaws.com/farmhausapp/img/farmhaus-instagram%402x.png")} />
+						<img
+							class={style.socialIcon} 		 src="https://s3.amazonaws.com/farmhausapp/img/farmhaus-instagram%402x.png" alt="instagram icon"
+							onMouseOver={this.handleSocialInstagramIn}
+							onMouseOut={this.handleSocialInstagramOut}
+						/>
 					</a>
 					<a href="https://www.twitter.com/farmhausapp" target="_blank" rel="noopener noreferrer" >
-						<img 
-							class={style.socialIcon} src="https://s3.amazonaws.com/farmhausapp/img/farmhaus-twitter%402x.png" alt="twitter icon" 
-							onMouseOver={e => (e.currentTarget.src = "https://s3.amazonaws.com/farmhausapp/img/farmhaus-twitter-hover%402x.png")}
-							onMouseOut={e => (e.currentTarget.src = "https://s3.amazonaws.com/farmhausapp/img/farmhaus-twitter%402x.png")} />
+						<img
+							class={style.socialIcon} src="https://s3.amazonaws.com/farmhausapp/img/farmhaus-twitter%402x.png" alt="twitter icon"
+							onMouseOver={this.handleSocialTwitterkIn}
+							onMouseOut={this.handleSocialTwitterOut}
+						/>
 					</a>
 				</div>
 				<ToastContainer />
