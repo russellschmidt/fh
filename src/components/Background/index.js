@@ -32,8 +32,7 @@ export default class Background extends Component {
 	notify = (email) => toast.success(`Thanks for signing up, ${this.state.email}!`,{
 		position: toast.POSITION.TOP_CENTER,
 		className: 'success-toast'
-		}
-	);
+	});
 
 	constructor() {
 		super();
@@ -62,7 +61,13 @@ export default class Background extends Component {
 		
 				<form onSubmit={this.handleSubmit}>
 					<div class={style.emailInput_container}>
-						<input type="email" placeholder="Email address" id="email-input" class={style.emailInput} name="email-input" onChange={this.handleChange} value={this.state.email} />
+						<input type="email"
+							placeholder="Email address"
+							id="email-input"
+							class={style.emailInput}
+							name="email-input"
+							onChange={this.handleChange}
+							value={this.state.email} />
 					</div>
 					<div class={style.btn_container}>
 						<button class={style.btn}>Join</button>
