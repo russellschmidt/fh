@@ -72,6 +72,7 @@ export default class Background extends Component {
 		this.handleSocialTwitterkIn = this.handleSocialTwitterIn.bind(this);
 		this.handleSocialTwitterOut = this.handleSocialTwitterOut.bind(this);
 		this.notify = this.notify.bind(this);
+		this.sendEmail = this.sendEmail.bind(this);
 	}
 
 	render() {
