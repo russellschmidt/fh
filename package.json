@@ -29,11 +29,11 @@
   },
   "dependencies": {
     "firebase": "^5.5.1",
-    "mailgun-js": "^0.21.0",
     "preact": "^8.2.6",
     "preact-compat": "^3.17.0",
     "preact-router": "^2.5.7",
-    "react-toastify": "^4.3.2"
+    "react-toastify": "^4.3.2",
+    "require-extension": "0.0.4"
   },
   "jest": {
     "verbose": true,

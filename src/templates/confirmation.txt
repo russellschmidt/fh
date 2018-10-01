@@ -1,0 +1,13 @@
+Hi {{email}}!
+
+Thanks so much for joining us to beta test FarmHaus, we’re excited to have you on board!
+
+For now, FarmHaus is busy doing research and building out our first offering. We'll be updating you on our progress!
+
+If you have any questions or find any issues, big or small, please drop us a note to farmhaus.app@gmail.com or on twitter at https://twitter.com/farmhausapp.
+
+Have a good one!
+
+Allison, Alyssa, Jessica, Nicole, and Russell
+Team FarmHaus
+https://farmhaus.app
